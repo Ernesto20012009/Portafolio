@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Contacto</title>
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-body">
+    <div class="container-fluid">
+        <!-- Logo / Marca -->
+        <a class="navbar-brand" href="../index.html">Portafolio</a>
+        
+        <!-- Botón Hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Enlaces -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ms-auto nav-pills gap-1">
+                <a class="nav-link text-light" href="../index.html">Inicio</a>
+                <a class="nav-link text-light" href="./sobre_mi.html">Sobre Mi</a>
+                <a class="nav-link text-light" href="./proyectos.html">Proyectos</a>
+                <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+            </div>
+        </div>
+    </div>
+    </nav>
+    <!--Fin barra de navegacion-->
+
+    <!-- Sección Contacto -->
+    <main class="container py-5 my-auto">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="card shadow-sm border-0 p-4">
+                    <h1 class="text-center fw-bold mb-4">Contacto</h1>
+                    <p class="text-center text-secondary mb-4">¿Tienes algún proyecto o propuesta? ¡Escríbeme!</p>
+                    
+                    <!-- Formulario  -->
+                    <form>
+                        <!-- Campo Nombre -->
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo">
+                        </div>
+
+                        <!-- Campo Correo -->
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Correo electrónico</label>
+                            <input type="email5" class="form-control" id="correo" placeholder="correo@ejemplo.com">
+                        </div>
+
+                        <!-- Campo Mensaje -->
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                        </div>
+
+                        <!-- Botón Enviar -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Ernesto Sánchez Salazar. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!--Script Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

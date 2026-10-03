@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <title>Portafolio ESS</title>
+</head>
+<!-- 1. d-flex flex-column min-vh-100 para fijar el comportamiento del footer -->
+<body class="bg-dark text-white d-flex flex-column min-vh-100">
+    
+    <!--Barra de navegacion (Intacta y funcional) -->
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+        <!-- texto de la barra de navegacion a la izquierda -->
+        <a class="navbar-brand" href="./index.html">Portafolio</a>
+
+        <!-- Botón Hamburguesa (indispensable para celulares) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- ms-auto los empuja los enlaces hacia la derecha -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav ms-auto nav-pills">
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                <a class="nav-link" href="./html/sobre_mi.html">Sobre Mi</a>
+                <a class="nav-link" href="./html/proyectos.html">Proyectos</a>
+                <a class="nav-link" href="./html/contacto.html">Contacto</a>
+            </div>
+        </div>
+    </div>
+    </nav> <!--Fin barra de navegacion-->
+
+    <!-- 2. flex-fill al header para que expanda el contenido y empuje el footer al fondo -->
+    <header class="bg-dark text-white py-5 flex-fill d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center justify-content-center text-center">
+                <div class="col-lg-10">
+                    <!-- Nombre -->
+                    <h1 class="display-4 fw-bold mb-3">Ernesto Sánchez Salazar</h1>
+                    
+                    <!-- Rol -->
+                    <h2 class="h3 text-info mb-3">Ingeniero en Comunicaciones y Electrónica | Desarrollador Java Full Stack</h2>
+                    
+                    <!-- Breve descripción -->
+                    <p class="lead text-light mb-4">
+                        Apasionado por la tecnología y el desarrollo de software. Me especializo en la creación de aplicaciones web robustas y APIs REST eficientes, combinando lógica de backend sólida con interfaces limpias.
+                    </p>
+                    
+                    <!-- Botones de acción -->
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="./html/proyectos.html" class="btn btn-primary btn-lg">Ver Proyectos</a>
+                        <a href="https://github.com/Ernesto20012009" target="_blank" class="btn btn-outline-light btn-lg">GitHub</a>
+                        <a href="https://www.linkedin.com/in/ernesto-salazar-dev/" target="_blank" class="btn btn-outline-light btn-lg">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> <!--Fin seccion inicio-->
+
+    <!-- Footer con mt-auto para que se quede abajo -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto border-top border-secondary">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Ernesto Sánchez Salazar. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!--Script Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
