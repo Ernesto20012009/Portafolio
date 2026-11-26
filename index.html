@@ -11,28 +11,9 @@
 <!-- 1. d-flex flex-column min-vh-100 para fijar el comportamiento del footer -->
 <body class="bg-dark text-white d-flex flex-column min-vh-100">
     
-    <!--Barra de navegacion (Intacta y funcional) -->
-    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
-    <div class="container-fluid">
-        <!-- texto de la barra de navegacion a la izquierda -->
-        <a class="navbar-brand" href="./index.html">Portafolio</a>
-
-        <!-- Botón Hamburguesa (indispensable para celulares) -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <!-- ms-auto los empuja los enlaces hacia la derecha -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="navbar-nav ms-auto nav-pills">
-                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                <a class="nav-link" href="./html/sobre_mi.html">Sobre Mi</a>
-                <a class="nav-link" href="./html/proyectos.html">Proyectos</a>
-                <a class="nav-link" href="./html/contacto.html">Contacto</a>
-            </div>
-        </div>
-    </div>
-    </nav> <!--Fin barra de navegacion-->
+    <!--Barra de navegacion (navbar.js)-->
+    <div id="barranavegacion"></div>
+    
 
     <!-- 2. flex-fill al header para que expanda el contenido y empuje el footer al fondo -->
     <header class="bg-dark text-white py-5 flex-fill d-flex align-items-center">
@@ -68,6 +49,8 @@
         </div>
     </footer>
 
+    <!--Script barra navegacion-->
+    <script src="./js/navbar.js"></script>
     <!--Script Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
